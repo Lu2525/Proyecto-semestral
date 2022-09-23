@@ -1,0 +1,251 @@
+##nombred del juego##
+print('Hola!')
+nombre = input('Ingrese su nombre: ' )
+print('Su nombre es : "', nombre ,'" ¿Quieres cambiarlo?')  
+cambio=input('S/N :')   
+while cambio != 'S' and cambio != 'N':
+    print('No es una opcion, seleccione')
+    cambio=input('S/N :')  
+    if(cambio=='S' or cambio=='N'):
+        break
+while cambio=='S':
+    nombre=input('Ingrese su nombre :')
+    print('Su nombre es : "', nombre ,'" ¿Quieres cambiarlo?')  
+    cambio=input('S/N :')
+    if(cambio=='N'):
+        break
+print ('Bienvenido!!', nombre,)
+
+print('.....Menu.....')
+print('Seleccione Modo:')
+print('Normal (N)') 
+print('Nivel Secreto (S)')
+    
+Modo=input('Modo: ')
+while Modo!= 'S' and Modo!='N':
+    print('No es una opcion, seleccione')
+    Modo=input('S/N :')  
+    if(Modo=='S' or Modo=='N'):
+        break
+
+if(Modo=='S'):
+    print("Mientras esta caminando perdido en un bosque ve el tronco hueco de un arbol")
+    print('Decide: Inspeccionar dentro (1) o Ignorarlo (2)')
+    opcion=input('OPCION: ')
+    while(opcion!='1' and opcion!='2'):
+        print('No es una opcion') 
+        opcion=input('OPCION: ')
+        if(opcion=='1' or opcion=='2'):
+            break
+    if(opcion=='2'):
+        print('Sigue caminando y se pierde del oro en el cofre')
+        print('Pero llega más rapido, e igual de pobre, a su casa')
+        print('---FIN---')   
+    if(opcion=='1'):
+        print('Encuentra un mapa y lo lee')
+        print('¿Sigue el camino que indica el mapa? Si (1) o No (2)')
+        opcion=input('OPCION: ')
+        while(opcion!='1' and opcion!='2'):
+            print('No es una opcion') 
+            opcion=input('OPCION: ')
+            if(opcion=='1' or opcion=='2'):
+                break
+        if(opcion=='2'):
+            print('Se lo pierde, perdio el juego')
+            print('¿Empezar desde el ultimo punto? S/N')
+            reiniciar=input('S/N :')
+            while reiniciar != 'S' and reiniciar != 'N':
+                print('No es una opcion, seleccione')
+                reiniciar=input('S/N :')
+                if(reiniciar=='S' or reiniciar=='N'):
+                    break
+            if(reiniciar=='S'):
+                print('¿Sigue el camino que indica el mapa? Si (1) o No (2)')
+                opcion=input('OPCION: ')
+                while(opcion!='1' and opcion!='2'):
+                    print('No es una opcion') 
+                    opcion=input('OPCION: ')
+                    if(opcion=='1' or opcion=='2'):
+                        break
+        if(opcion=='1'):
+            print('Llega a un cofre')
+            print('¿Tiene la llave? Si (1) o No (2)')
+            opcion=input('OPCION: ')
+            while(opcion!='1' and opcion!='2'):
+                print('No es una opcion') 
+                opcion=input('OPCION: ')
+                if(opcion=='1' or opcion=='2'):
+                    break
+            if(opcion=='2'):
+                    print('Fuerza el cofre y lo logra abrir')
+                    print('¿Desea saber que hay dentro? Si (1) o No (2)')
+                    opcion=input('OPCION: ')
+                    while(opcion!='1' and opcion!='2'):
+                        print('No es una opcion') 
+                        opcion=input('OPCION: ')
+                        if(opcion=='1' or opcion=='2'):
+                            break
+                    if(opcion=='1' or opcion=='2'):
+                        print('De todas formas iba a saberlo')
+                        print('En el cofre hay oro')
+                        print('¿Qué va a hacer con el oro? Venderlo (1) o Guardarlo (2)')
+                        opcion=input('OPCION: ')
+                        while(opcion!='1' and opcion!='2'):
+                            print('No es una opcion') 
+                            opcion=input('OPCION: ')
+                            if(opcion=='1' or opcion=='2'):
+                                break
+                        if(opcion=='1' or opcion=='2'):
+                            print('No puede porque esta perdido en el bosque')
+                            print('---FIN---')
+            while(opcion=='1'):
+                print('Falso, no tiene, pierde por mentiroso')
+                print('¿Empezar desde el ultimo punto? S/N')
+                reiniciar=input('S/N :')
+                while reiniciar != 'S' and reiniciar != 'N':
+                    print('No es una opcion, seleccione')
+                    reiniciar=input('S/N :')
+                    if(reiniciar=='S' or reiniciar=='N'):
+                        break
+                if(reiniciar=='S'):
+                    print('Llega a un cofre')
+                    print('¿Tiene la llave? Si (1) o No (2)')
+                    opcion=input('OPCION: ')
+                    while(opcion!='1' and opcion!='2'):
+                        print('No es una opcion') 
+                        opcion=input('OPCION: ')
+                        if(opcion=='1' or opcion=='2'):
+                            break
+                    if(opcion=='2'):
+                        print('Fuerza el cofre y lo logra abrir')
+                    print('¿Desea saber que hay dentro? Si (1) o No (2)')
+                    opcion=input('OPCION: ')
+                    while(opcion!='1' and opcion!='2'):
+                        print('No es una opcion') 
+                        opcion=input('OPCION: ')
+                        if(opcion=='1' or opcion=='2'):
+                            break
+                    if(opcion=='1' or opcion=='2'):
+                        print('De todas formas iba a saberlo')
+                        print('En el cofre hay oro')
+                        print('¿Qué va a hacer con el oro? Venderlo (1) o Guardarlo (2)')
+                        opcion=input('OPCION: ')
+                        while(opcion!='1' and opcion!='2'):
+                            print('No es una opcion') 
+                            opcion=input('OPCION: ')
+                            if(opcion=='1' or opcion=='2'):
+                                break
+                        if(opcion=='1' or opcion=='2'):
+                            print('No puede porque esta perdido en el bosque')
+                            print('---FIN---')
+            
+            
+
+if(Modo=='N'):
+    print('Despiertas en un bosque y te das cuenta que estas perdido')
+    print('Decides: ')
+    print('Intentar volver a casa (1) o Quedarse sentado (2)')
+    opcion=input('OPCION: ')
+    while(opcion!='1' and opcion!='2'):
+        print('No es una opcion') 
+        opcion=input('OPCION: ')
+        if(opcion=='1' or opcion=='2'):
+            break
+    if(opcion=='1'):
+        print('Vas por un sendero y se divide en dos')
+    if(opcion=='2'):
+        print('Lo piensas mejor y comienzas a caminar hasta un camino que se divide en dos')
+    
+print('Eliges el camino: ')
+print('Derecho (1) o Izquierdo (2)')
+opcion=input('OPCION: ')
+while(opcion!='1' and opcion!='2'):
+    print('No es una opcion') 
+    opcion=input('OPCION: ')
+    if(opcion=='1' or opcion=='2'):
+        break
+if(opcion=='1'):
+    print('Encuentras un rio')
+    print('¿Cómo lo cruzas?')
+    print('Nadando (1) o En un bote que encontraste (2)')
+    opcion=input('OPCION: ')
+    if(opcion=='1'):
+        print('Llegas al otro lado y te da hambre')
+while(opcion!='1' and opcion!='2'):
+    print('No es una opcion') 
+    opcion=input('OPCION: ')
+    if(opcion=='1' or opcion=='2'):
+        break
+while(opcion=='2'):
+    print('El bote era de un leñador, se enoja y te asesina, perdiste')
+    print('¿Empezar desde el ultimo punto? S/N')
+    reiniciar=input('S/N :')
+    while reiniciar != 'S' and reiniciar != 'N':
+        print('No es una opcion, seleccione')
+        reiniciar=input('S/N :')
+        if(reiniciar=='S' or reiniciar=='N'):
+            break
+    if(reiniciar=='S'):
+        print('Encuentras un rio')
+        print('¿Cómo lo cruzas?')
+        print('Nadando (1) o En un bote que encontraste (2)')
+        opcion=input('OPCION: ')
+        if(opcion=='1'):
+            print('Llegas al otro lado y te da hambre')
+        while(opcion!='1' and opcion!='2'):
+            print('No es una opcion') 
+            opcion=input('OPCION: ')
+            if(opcion=='1' or opcion=='2'):
+                break
+    else:
+        print('FIN')
+    
+if(opcion=='2'):
+    print('Encuentras una llave')
+    print('¿Te la llevas? Si (1) o No (2)')
+    opcion=input('OPCION: ')
+    if(opcion=='1' or opcion=='2'):
+        print('Sigues caminando y te da hambre')
+print('Ves una planta con frutos')
+print('¿Decides comer los frutos? Si (1) o No (2)')
+opcion=input('OPCION: ')
+while(opcion!='1' and opcion!='2'):
+    print('No es una opcion') 
+    opcion=input('OPCION: ')
+    if(opcion=='1' or opcion=='2'):
+        break
+if(opcion=='1'):
+    print('Ya no tienes hambre, sigues caminando')
+    print('Ves un pueblo, corres al pueblo')
+while(opcion=='2'):
+    print('Seguis con hambre pero continuas el camino')
+    print('Ves un pueblo, corres al pueblo')
+    print('Como tienes hambre le pides comida a una joven, la joven se asusta y grita')
+    print('Te llevan preso por pertubar la paz, perdiste')
+    print('¿Empezar desde el ultimo punto? S/N')
+    reiniciar=input('S/N :')
+    while reiniciar != 'S' and reiniciar != 'N':
+        print('No es una opcion, seleccione')
+        reiniciar=input('S/N :')
+        if(reiniciar=='S' or reiniciar=='N'):
+            break
+    if(reiniciar=='S'):
+        print('¿Decides comer los frutos? Si (1) o No (2)')
+        opcion=input('OPCION: ')
+        while(opcion!='1' and opcion!='2'):
+            print('No es una opcion') 
+            opcion=input('OPCION: ')
+        while(opcion=='2'):
+            print('Seguis con hambre pero continuas el camino')
+            print('Ves un pueblo, corres al pueblo')
+            print('Como tienes hambre le pides comida a una joven, la joven se asusta y grita')
+            print('Te llevan preso por pertubar la paz, perdiste')
+            print('¿Empezar desde el ultimo punto? S/N')
+            reiniciar=input('S/N :')
+        if(opcion=='1'):
+            print('Ya no tienes hambre, sigues caminando')
+            print('Ves un pueblo, corres al pueblo')
+        
+    print('Llegas al pueblo y le pides ayuda a un hombre')
+    print('El señor te lleva en su camioneta a tu pueblo que estaba a pocos kilometros')
+    print('---FIN---')
